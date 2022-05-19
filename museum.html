@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/generalcss.css">
+    <link rel="stylesheet" href="jqueryUi/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryUi/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryUi/jquery-ui.theme.css">
+    <script src="scripts/jquery-3.6.0.js"></script>
+    <script src="jqueryUi/jquery-ui.js"></script>
+  
+ 
+
+    <title>Museum</title>
+</head>
+<style>
+    #panels{
+        margin:70px;
+    }
+    #panels h3{
+        text-align: left;
+        
+    }
+    #panels p{
+        text-align: left;
+    }
+    .ui-state-active{
+background-image:none;
+background-color:#a1887f!important;
+color:#454545!important;
+border: 1px solid #454545!important;
+}
+
+.ui-state-default{
+
+background-color:#F6F6F6;
+color:#454545;
+}
+#block{
+    height:755px;
+}
+</style>
+
+<body>
+    <nav>
+        
+        <a style="float:left"href="index.html"><img src="images/compass.png" alt=""></a>
+        <a href="">Museum & FAQ</a>
+        <div  id= "container" >
+         
+           
+            <div id="block">
+                 <h1>Museo Galileo </h1>
+                 <img style="float:right"src="images/museum.jpg" alt="">
+                 <h3>Muesum and its history </h3> 
+                 In recent decades the Istituto e Museo di Storia della Scienza has experienced a strong expansion with the growth of visibility of the museum activities and the organization of temporary exhibitions, as well as with the impressive increase in library collections, the assiduous commitment to promoting research, the dense publication of journals and volumes and the massive investment in information and communication technology at the service of historical-scientific research.<br><br>
+                 <h3>Origin of the Museum</h3>
+                 <img style="float:right"src="images/museum2.jpg" alt="">
+The name Museo Galileo was adopted in 2010 after a radical renovation of the museum’s premises and contents. The subtitle Istituto e Museo di Storia della scienza provides a link to its earlier history and shows that the institution keeps considering the activities of documentation and research the focus of highest attention.
+
+
+                
+               
+            </div>
+            <div id="block"  >
+                <h1>The Monumental Sundial</h1> 
+                <h3>A Mathematical Ornament</h3>
+                <img style="float:right"src="images/momental.jpg" alt="">
+                The monumental sundial was built in 2007 as a “mathematical ornament” for the Museo Galileo.
+Well known since antiquity, the sundial is a time-measuring instrument made up by a style casting a shadow on a quadrant. Its functioning is based on the observation of the style’s shadow combined with the notion of the Sun as a time-keeper apparently revolving around the immobile Earth in a uniform daily motion.<br><br>
+<h3>How The Sundial Works</h3>
+<img style="float:right"src="images/sundial.jpg" alt="">
+The shadow cast by the glass polyhedron atop the large bronze gnomon indicates the date and time. The hours from 9:00 AM to 2:00 PM are marked out by radial brass lines. The date is indicated by the travertine traversal lines which mark the Sun’s diurnal course for various periods of the year – precisely when the Star enters the signs of the Zodiac. The shadow cast by the gnomon changes in length during the course of the days and seasons, and indicates true solar time for the place where it is located, which is a different time than that of our wristwatches, known as mean time. In respect to mean time, true solar time has a periodic variation that can exceed a quarter of an hour.
+
+            </div>
+        </div>
+        <h1>Frequently Asked Questions <br>MUSEUM – PRACTICAL INFORMATION</h1>
+        <div id="panels"> 
+           
+            <h3>How long should I plan for my visit to the Museum?</h3>
+            <p>
+                An average visit lasts about 1-2 hours.
+            </p>
+            <h3>
+                Does the Museum offer birthday parties?
+            </h3>
+            <p>
+                We are sorry, but at the moment we do not have rooms available for birthday parties.
+            </p>
+            <h3>Should I book the entrance in advance?</h3>
+            <p>For individual visitors it is not necessary. Reservation is mandatory for groups and school groups of minimum 15 people, and for those who wish to participate in one of our guided visits or workshops.</p>
+
+            <h3>Which is the best period to visit the museum?</h3>
+            <p>In March and April the halls are crowded with school groups, while in the summer months we have a large number of tourists visiting our collections. For a more comfortable experience, we suggest you to plan your visit in Autumn or Winter (National Holidays excluded).</p>
+            <h3>Is the museum free every first Sunday of the month?</h3>
+            <p>
+                The “Domenica al Museo” is promoted by state-owned Museums, while the “Domenica metropolitana” applies to Florentine Civic Museums. The Museo Galileo is a private institution, so it does not adhere to those initiatives.
+Find out which special promotions are currently available at Information.
+            </p>
+            <h3>Is the museum suitable for children?</h3>
+            <p>The Museo Galileo is a museum of the history of science and not a science center. It focuses on the history of science and the historical approach to the collections is the dominant one. We suggest families with children to book one of our guided visits or educational workshops, which can be tailored to any age. More info at Museum activities for the general public.
+                If you visit the museum by yourself, children under 7-8 might find it difficult to understand.</p>
+            <h3>What resources are available to help me plan my visit to the Museum?</h3>
+            <p>
+                The Museo Galileo web site has plenty of contents, in-depth information and tools to prepare the visit. You can browse the Permanent Exhibition, or download the mini-guides, available in several languages. Moreover, we remind you of the Museo Galileo App, which is available for smartphone and tablet for free.
+To teachers: we recommend the online didactics pages of our website.
+            </p>
+            <h3>How can I be updated with the latest museum news?</h3>
+            <p>You only need to send us an email at info@museogalileo.it writing SIGN ME IN in the object line and we will be pleased to include you in our mailing list. The Museo Galileo is a Research Institute and so you’ll receive not only information about museum’s events, but also about research projects, exhibitions, conferences,book launches and much more. You will be able to cancel your subscription at any time. The Museo Galileo is also on Facebook and Twitter.</p>
+           
+        </div>
+        <script>
+            $(function(){
+                $("#panels").accordion({
+                    collapsible:true,
+                    event:"click",
+                    animate:300,
+                    active:0,
+                    heightStyle:true,
+                    icons:{header:"ui-icon-plus",activeHeader:"ui-icon-minus"}
+
+
+
+                });//jQuery Plug in 
+
+            });
+
+
+        </script>
+
+
+
+
+        <footer>
+            <section>
+            
+            <div style="border-right: 2px solid white" >
+                <span> MyWorld.com<br> </span>
+                <span> Feedback/About<br> </span>
+                <span> Blog<br><br></span><br>
+                Follow Us
+                
+                <br>
+                   
+                    <div onmouseover="style='border-bottom:3px solid white;'" onmouseout="style='border-bottom:0';"><a href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyK1MKy5TYDRgdGDw4khLTE5Nys_PBgBmYAfL&q=facebook&oq=fac&aqs=chrome.1.69i57j46i131i199i433i465i512j35i39j46i131i199i433i465i512j0i3j0i512j0i433i512j0i131i433i512.1670j0j7&sourceid=chrome&ie=UTF-8"><img src="images/f.png" alt=""> </a></div>
+                    
+                    <div onmouseover="style='border-bottom:3px solid white;'" onmouseout="style='border-bottom:0';">  <a href="https://myaccount.google.com/"><img src="images/g+.png" alt=""></a></div>
+                    <div onmouseover="style='border-bottom:3px solid white;'" onmouseout="style='border-bottom:0';"> <a href="https://twitter.com/?lang=tr"><img src="images/tw.png" alt=""></a></div>
+                    
+    
+    
+            </div>
+            <div>
+                <span>Terms of Use<br></span>
+                <span>Cookie Policy<br></span>
+                <span>Privacy Policy<br><br></span>
+                <img src="images/mail.png" alt="">
+               
+               Sign Up For Our World Map Community
+            <br><br>
+               
+                <input id="textBox" onclick="this.value=' '"type="text" value="Enter your e-mail adress">
+                
+                <input onmouseover="this.style.backgroundColor='beige'" onmouseout="this.style.backgroundColor='rgba(221, 209, 176, 0.9)'"id ="btn"type="button" value="SIGN UP">
+    
+    
+    
+    
+    
+            </div>
+            
+    
+        </section>
+       
+        <section id="section2" > <div style="height:0px"><span>Copyright © MyWorld 2022 </span>| <span>Contact Us</span> |    <span>Resources</span> |
+        <span>Donation
+    
+        </span></div>
+    
+            
+        
+        </section>
+    
+        
+    
+        </footer>
+        
+    </nav>
+    
+
+</body>
+</html>

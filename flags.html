@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flags</title>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/generalcss.css">
+    <style>
+   
+        
+    
+     header{
+            font-size: 28px;
+            
+            text-align: center;
+            
+            
+        
+        }
+        
+     @media(min-width:1280px)
+      {
+        
+       
+      
+        #flagContainer{
+          width:1200px;
+        
+          height: auto;
+          margin:50px auto;
+      }
+      .maincontainer{position:relative;
+                width:180px;
+                height:110px;
+                margin: 15px 25px;
+                display: inline-block;
+               
+
+            }
+
+      }
+      @media(max-width:1280px)
+      {
+        
+      #flagContainer{
+          width:600px;
+       
+          height: auto;
+          margin:50px auto;
+      }
+     
+      .maincontainer{position:relative;
+                width:180px;
+                height:110px;
+                margin: 15px auto;
+                display:block;
+
+               
+
+            }
+    
+    }
+    </style>
+
+</head>
+<body>
+    
+    <nav>
+       
+        <a style="float:left"href="index.html"><img src="images/compass.png" alt=""></a>
+        <a href="">Flags</a>
+
+        <div  id= "container" >
+            <div id="block"  >
+                <h1>Short History of Flags</h1> 
+                <img style="float:right"src="images/countryflags.png" alt="">
+                A flag is a distinctive piece of fabric used as a symbol, a signalling device, or for decoration. While the origin of flags is unknown, flag-like symbols have been described as far back as 11th century BC China and have been used by other ancient civilisations such as Egypt and Rome.
+
+During the Medieval period, silk from China allowed a variety of peoples, such as the Arabs and the Norse, to develop flags which flew from poles. <br><br>Developments in heraldry led to the creation of personal heraldic banners for rulers and other important people in the European kingdoms. Flags began to be regularly used on board ships for identification and communication in the Age of Sail. In the 18th century and onwards, a rising tide of nationalism around the world meant that common people began to regularly identify themselves with nation-states and their symbols, including flags. In the modern day, every national entity and many sub-national entities employ flags for identification.
+
+            </div>
+           
+            <div id="block">
+                 <h1>Did you know...? </h1>
+                 <h3>The Study of Flags Is Called Vexillology</h3> 
+                 <br>Vexillology is the scientific study of flags and related emblems. It is concerned with research into flags of all kinds, both modern and historical, the creation of a body of practice for flag design and usage, and of a body of theory of flag development. Vexillology seeks to understand and explain the important part played by flags in the modern world.
+                <h3>There Is Only One Non Rectangular National Flag</h3>
+                <img style="float:right"src="images/nepalflag.png" alt="">
+                Every country’s flag is – to a certain extent – quadrilateral in shape (whether it is a rectangle or a square) with only one exception – Nepal.
+
+                It is shaped like two stacked triangles, representing the Himalaya Mountains and – more recently – the two religions of Hinduism and Buddhism. The sun and moon represent the hope that the country will live as long as these celestial bodies.
+            </div>
+        </div>
+
+        <div id="flagContainer" >
+            <h1>Flag Card Generator</h1>
+            <input type="text" id="textbox"placeholder="Enter number of cards..." onclick="this.value=' '" style="border-radius:10px">
+            <input type="button" id="btn"value="DISPLAY" onmouseover="this.style.backgroundColor='beige'" onmouseout="this.style.backgroundColor='rgba(221, 209, 176, 0.9)';"><br>
+
+            <div id="flagContainer2"> </div>
+
+
+
+        </div>
+       
+        <style>
+            
+            
+            .thecard{
+                position: absolute;
+                width:100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                transition:all 0.5s ease;
+                
+
+            }
+            .thecard:hover{
+                transform: rotateY(180deg);
+
+            }
+            .thefront{
+                position: absolute;
+                width:100%;
+                height: 100%;
+                backface-visibility: hidden;
+                background:linear-gradient(beige,rgba(161, 123, 17, 0.5),rgb(51, 40, 20));
+                box-shadow: 8px 10px rgba(0,0,0,0.4);
+               
+                color:White;
+                
+                text-align: center;
+                font-family: 'zille slab';
+                border-radius: 20px;
+                font-size: 25px;
+                font-weight: bold;
+              
+
+
+            }
+            .theback{ position: absolute;
+                width:100%;
+                height: 100%;
+                backface-visibility: hidden;
+                background-color: rgba(245,245,220,0.0);
+                border-radius: 20px;
+                color:grey;
+                transform: rotateY(180deg);
+
+              }
+
+
+        </style>
+       
+        <script>
+
+            $(function(){
+
+               
+               
+                flagImages=[{
+                name:"Belize",
+                pic:"Belize.png"
+                    
+                },
+                {
+                name:"Greece",
+                pic:"Greece.png"
+                },
+
+                {
+                name:"India",
+                pic:"India.png"
+                },
+
+                {
+                name:"Lebanon",
+                pic:"Lebanon.png"
+                },
+
+                {
+                name:"Portugal",
+                pic:"Portugal.png"
+                },
+
+                {
+                name:"Romania",
+                pic:"Romania.png"
+                },
+
+                {
+                name:"Slovakia",
+                pic:"Slovakia.png"
+                },
+
+                {
+                name:"South Africa",
+                pic:"South Africa.png"
+                },
+
+                {
+                name:"Spain",
+                pic:"Spain.png"
+                },
+
+                {
+                name:"Togo",
+                pic:"Togo.png"
+                },
+
+                {
+                name:"Turkey",
+                pic:"Turkey.png"
+                },
+
+                {
+                name:"Ukraine",
+                pic:"Ukraine.png"
+                },
+                {
+                name:"Uruguay",
+                pic:"Uruguay.png"
+                },
+                {
+                name:"Germany",
+                pic:"Germany.png"
+                },
+                {
+                name:"Israel",
+                pic:"Israel.png"
+                },
+                {
+                name:"Pakistan",
+                pic:"Pakistan.png"
+                },
+                {
+                name:"Cuba",
+                pic:"Cuba.png"
+                },
+              
+
+
+                ];
+                
+                
+                $("#btn").click(function() {displaycard();});
+
+                function displaycard(){
+                no=parseInt($("#textbox").val());
+                
+                $("#flagContainer2").html("");
+            
+                for(i=1;i<=no;i++)
+                {
+                  
+                    
+                    random=Math.floor(Math.random()*15)+1;
+                    
+                    
+                    out=`<div id="maincontainer" class="maincontainer">
+                     <div id="thecard" class="thecard">
+                    <div id="thefront" class="thefront"><div style='margin:35px auto;'> ${flagImages[random].name}</div></div>
+                    <div id="theback" class="theback"> <div style="margin:25px auto"><img src="flagimages/${flagImages[random].pic}"> </div></div>
+
+                    </div></div>`
+                if(i%4==0)
+                out+="<br>";
+ 
+                 $("#flagContainer2").append(out);
+                
+
+
+              }};
+
+
+
+            });
+          
+
+        </script>
+        <footer>
+            <section>
+            
+            <div style="border-right: 2px solid white" >
+                <span> MyWorld.com<br> </span>
+                <span> Feedback/About<br> </span>
+                <span> Blog<br><br></span><br>
+                Follow Us
+                
+                <br>
+                   
+                    <div onmouseover="style='border-bottom:3px solid white;'" onmouseout="style='border-bottom:0';"><a href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyK1MKy5TYDRgdGDw4khLTE5Nys_PBgBmYAfL&q=facebook&oq=fac&aqs=chrome.1.69i57j46i131i199i433i465i512j35i39j46i131i199i433i465i512j0i3j0i512j0i433i512j0i131i433i512.1670j0j7&sourceid=chrome&ie=UTF-8"><img src="images/f.png" alt=""> </a></div>
+                    
+                    <div onmouseover="style='border-bottom:3px solid white;'" onmouseout="style='border-bottom:0';">  <a href="https://myaccount.google.com/"><img src="images/g+.png" alt=""></a></div>
+                    <div onmouseover="style='border-bottom:3px solid white;'" onmouseout="style='border-bottom:0';"> <a href="https://twitter.com/?lang=tr"><img src="images/tw.png" alt=""></a></div>
+                    
+
+
+            </div>
+            <div>
+                <span>Terms of Use<br></span>
+                <span>Cookie Policy<br></span>
+                <span>Privacy Policy<br><br></span>
+                <img src="images/mail.png" alt="">
+               
+               Sign Up For Our World Map Community
+            <br><br>
+               
+                <input id="textBox" onclick="this.value=' '"type="text" value="Enter your e-mail adress">
+                
+                <input onmouseover="this.style.backgroundColor='beige'" onmouseout="this.style.backgroundColor='rgba(221, 209, 176, 0.9)'"id ="btn"type="button" value="SIGN UP">
+
+
+
+
+
+            </div>
+            
+
+        </section>
+       
+        <section id="section2" > <div style="height:0px"><span>Copyright © MyWorld 2022 </span>| <span>Contact Us</span> |    <span>Resources</span> |
+        <span>Donation
+
+        </span></div>
+
+            
+        
+        </section>
+
+        
+
+        </footer>
+
+       
+        
+
+
+    </nav>
+</body>
+</html>
